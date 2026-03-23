@@ -1,0 +1,36 @@
+sources:
+  rss:
+    enabled: true
+    feeds:
+      - https://news.google.com/rss/search?q=trending+products
+      - https://news.google.com/rss/search?q=emerging+technology
+      - https://news.google.com/rss/search?q=consumer+trends
+  web_search:
+    enabled: true
+    query_families:
+      - name: discovery
+        queries:
+          - trending products 2026
+          - emerging trends 2026
+          - rising niches 2026
+      - name: behavior
+        queries:
+          - people are obsessed with 2026
+          - everyone is using 2026
+      - name: forecast
+        queries:
+          - next big thing in ecommerce
+          - future of creator tools
+  reddit:
+    enabled: false
+    subreddits:
+      - entrepreneur
+      - startups
+      - ecommerce
+      - sideproject
+  github:
+    enabled: false
+    topics:
+      - ai-agents
+      - developer-tools
+      - automation

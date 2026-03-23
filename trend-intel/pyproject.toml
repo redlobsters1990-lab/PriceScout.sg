@@ -1,0 +1,23 @@
+[project]
+name = "trend-intel"
+version = "0.1.0"
+description = "Trend intelligence workflow scaffold for OpenClaw"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.8",
+  "httpx>=0.27",
+  "beautifulsoup4>=4.12",
+  "trafilatura>=1.9",
+  "feedparser>=6.0",
+  "rapidfuzz>=3.9",
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "PyYAML>=6.0"
+]
+
+[project.scripts]
+trend-intel = "trend_intel.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

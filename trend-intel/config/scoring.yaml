@@ -1,0 +1,21 @@
+trend_score:
+  frequency: 0.25
+  source_diversity: 0.20
+  engagement: 0.15
+  persistence: 0.15
+  commercial: 0.10
+  recency: 0.10
+  validation: 0.05
+forecast_score:
+  velocity: 0.30
+  novelty: 0.20
+  spread: 0.15
+  builder_adoption: 0.15
+  repeat_appearance: 0.10
+  commercial_emergence: 0.10
+thresholds:
+  established: 85
+  emerging: 65
+  watchlist: 40
+  breakout_velocity: 70
+  minimum_source_diversity: 2
