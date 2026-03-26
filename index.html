@@ -3,259 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PriceScout.sg — Singapore Product Comparisons 2026</title>
-    <meta name="description" content="Compare prices across Amazon SG, Shopee, Lazada. Find the best deals on air purifiers, dehumidifiers, water filters, and more.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>PriceScout.sg | Singapore Product Comparisons 2026</title>
+    <meta name="description" content="Compare prices on air purifiers, dehumidifiers, water filters and more. Real reviews, Singapore retailers, best deals.">
     <style>
-        :root {
-            --primary: #0071e3;
-            --text: #1d1d1f;
-            --text-secondary: #86868b;
-            --bg: #f5f5f7;
-        }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.47059; }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
         
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
+        /* Header */
+        header { background: rgba(0,0,0,0.8); backdrop-filter: saturate(180%) blur(20px); position: sticky; top: 0; z-index: 100; }
+        header .container { display: flex; justify-content: space-between; align-items: center; height: 44px; }
+        .logo { color: #f5f5f7; text-decoration: none; font-size: 21px; font-weight: 600; }
+        nav a { color: #f5f5f7; text-decoration: none; font-size: 14px; margin-left: 30px; opacity: 0.8; }
+        nav a:hover { opacity: 1; }
         
         /* Hero */
-        .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            color: white;
-            padding: 100px 20px 80px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 52px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 20px;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        .hero .stores {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            opacity: 0.7;
-            font-size: 14px;
-        }
+        .hero { background: #000; color: #fff; text-align: center; padding: 80px 20px 60px; }
+        .hero h1 { font-size: 56px; font-weight: 700; letter-spacing: -0.005em; margin-bottom: 15px; }
+        .hero p { font-size: 28px; color: #86868b; margin-bottom: 30px; }
+        .cta-button { display: inline-block; background: #0071e3; color: #fff; padding: 18px 36px; border-radius: 980px; text-decoration: none; font-size: 17px; font-weight: 400; }
+        .cta-button:hover { background: #0077ed; }
         
         /* Categories */
-        .categories {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .categories h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-        .card-image {
-            height: 180px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 64px;
-        }
-        .card-body {
-            padding: 25px;
-        }
-        .card h3 {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        .card p {
-            color: var(--text-secondary);
-            font-size: 15px;
-            margin-bottom: 15px;
-        }
-        .card .price {
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 16px;
-        }
-        
-        /* How it works */
-        .how {
-            background: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        .how h2 {
-            font-size: 32px;
-            margin-bottom: 50px;
-        }
-        .how-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .how-item {
-            padding: 20px;
-        }
-        .how-item .num {
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0 auto 20px;
-        }
-        .how-item h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        .how-item p {
-            color: var(--text-secondary);
-        }
+        .categories { padding: 80px 20px; }
+        .categories h2 { text-align: center; font-size: 40px; font-weight: 700; margin-bottom: 50px; }
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .category-card { background: #fff; border-radius: 18px; padding: 30px; text-align: center; text-decoration: none; color: inherit; transition: transform 0.3s; }
+        .category-card:hover { transform: scale(1.02); }
+        .category-card .icon { font-size: 48px; margin-bottom: 15px; }
+        .category-card h3 { font-size: 21px; font-weight: 600; margin-bottom: 10px; }
+        .category-card p { font-size: 17px; color: #86868b; margin-bottom: 15px; }
+        .category-card .price { color: #0071e3; font-weight: 600; }
         
         /* Footer */
-        footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        footer p {
-            opacity: 0.7;
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 36px; }
-            .categories h2, .how h2 { font-size: 26px; }
-        }
+        footer { background: #f5f5f7; padding: 40px 20px; text-align: center; font-size: 12px; color: #86868b; }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PriceScout</a>
+            <nav>
+                <a href="air-purifiers.html">Air Purifiers</a>
+                <a href="dehumidifiers.html">Dehumidifiers</a>
+                <a href="water-filters.html">Water Filters</a>
+            </nav>
+        </div>
+    </header>
+    
     <section class="hero">
-        <h1>Compare Prices.<br>Save Money.</h1>
-        <p>We track prices across Amazon SG, Shopee, and Lazada so you don't have to. Find the best deals on home essentials.</p>
-        <div class="stores">
-            <span>Amazon.sg</span>
-            <span>•</span>
-            <span>Shopee</span>
-            <span>•</span>
-            <span>Lazada</span>
-            <span>•</span>
-            <span>Courts</span>
-            <span>•</span>
-            <span>Best Denki</span>
+        <div class="container">
+            <h1>Compare. Save. Buy Smart.</h1>
+            <p>Singapore's trusted product comparison site.</p>
+            <a href="#categories" class="cta-button">Explore Comparisons</a>
         </div>
     </section>
     
-    <section class="categories">
-        <h2>What are you looking for?</h2>
-        <div class="grid">
-            <a href="daf-sites-resilience/air-purifiers.html" class="card">
-                <div class="card-image">🌬️</div>
-                <div class="card-body">
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>What are you shopping for?</h2>
+            <div class="category-grid">
+                <a href="air-purifiers.html" class="category-card">
+                    <div class="icon">🌬️</div>
                     <h3>Air Purifiers</h3>
-                    <p>Beat the haze season. Protect your family from PM2.5 and pollution.</p>
-                    <div class="price">From S$140 • 5 products compared</div>
-                </div>
-            </a>
-            <a href="daf-sites-resilience/dehumidifiers.html" class="card">
-                <div class="card-image">💧</div>
-                <div class="card-body">
+                    <p>Breathe cleaner air. Beat the haze.</p>
+                    <div class="price">From S$140</div>
+                </a>
+                <a href="dehumidifiers.html" class="category-card">
+                    <div class="icon">💧</div>
                     <h3>Dehumidifiers</h3>
-                    <p>Fight Singapore humidity. Prevent mold and protect your home.</p>
-                    <div class="price">From S$180 • 5 products compared</div>
-                </div>
-            </a>
-            <a href="daf-sites-resilience/water-filter-pitchers.html" class="card">
-                <div class="card-image">🚰</div>
-                <div class="card-body">
-                    <h3>Water Filter Pitchers</h3>
-                    <p>Clean drinking water for your family. Save money vs bottled water.</p>
-                    <div class="price">From S$40 • 5 products compared</div>
-                </div>
-            </a>
-            <a href="daf-sites-resilience/portable-power-stations.html" class="card">
-                <div class="card-image">🔋</div>
-                <div class="card-body">
-                    <h3>Portable Power Stations</h3>
-                    <p>Backup power for outages. Essential for home offices and medical devices.</p>
-                    <div class="price">From S$320 • 5 products compared</div>
-                </div>
-            </a>
-            <a href="daf-sites-resilience/vacuum-sealer-machines.html" class="card">
-                <div class="card-image">🥘</div>
-                <div class="card-body">
-                    <h3>Vacuum Sealer Machines</h3>
-                    <p>Save food, save money. Buy in bulk and keep food fresh longer.</p>
-                    <div class="price">From S$70 • 5 products compared</div>
-                </div>
-            </a>
-        </div>
-    </section>
-    
-    <section class="how">
-        <h2>How PriceScout Works</h2>
-        <div class="how-grid">
-            <div class="how-item">
-                <div class="num">1</div>
-                <h3>We Research</h3>
-                <p>Our team identifies the best products in each category based on features, reviews, and value.</p>
-            </div>
-            <div class="how-item">
-                <div class="num">2</div>
-                <h3>We Compare</h3>
-                <p>We monitor prices across major Singapore retailers to find you the best deals.</p>
-            </div>
-            <div class="how-item">
-                <div class="num">3</div>
-                <h3>You Save</h3>
-                <p>Click through to see current prices and buy from the retailer offering the best deal today.</p>
+                    <p>Fight Singapore humidity.</p>
+                    <div class="price">From S$180</div>
+                </a>
+                <a href="water-filters.html" class="category-card">
+                    <div class="icon">💧</div>
+                    <h3>Water Filters</h3>
+                    <p>Clean drinking water.</p>
+                    <div class="price">From S$40</div>
+                </a>
             </div>
         </div>
     </section>
     
     <footer>
-        <p>© 2026 PriceScout.sg — Singapore Product Comparisons</p>
-        <p>Prices and availability subject to change. Always verify before purchase.</p>
+        <div class="container">
+            <p>© 2026 PriceScout.sg | Singapore Product Comparisons</p>
+        </div>
     </footer>
 </body>
 </html>
