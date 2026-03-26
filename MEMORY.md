@@ -6,6 +6,7 @@
 - User has shifted the system goal toward a Singapore comparison-page / affiliate publishing business rather than a broad generic DAF model.
 - User wants all agents to maintain both short-term and long-term memory and to read their own memory before repeating prior work or handling updates.
 - User prefers the workspace docs to be organized cleanly with clear file roles and reduced overlap/duplication.
+- User wants the `chief_of_staff` to be the final internal decision maker for which approved opportunities become pages.
 
 ## DAF operating model
 - The DAF system uses 9 core agents: `chief_of_staff`, `orchestrator`, `market_intel`, `research`, `planner`, `builder`, `publisher`, `revenue_ops`, `growth_ops`.
@@ -46,6 +47,13 @@
 - I rewrote specialist role docs/memory seeds to replace stale generic roles with the new workflow.
 - I added `workspace-daf-shared/daf/DOCS_STRUCTURE.md` to clarify the purpose of `SOUL.md`, `CONTRACT.md`, `AGENTS.md`, `MEMORY.md`, and daily memory files.
 - Verified status at setup time: 5 monitored assets, 35 successful workflow runs, 5 known locally published pages.
+- Added production-style product screening config (`state/product_screening_config.json`) with catalog-backed live product source (`state/live_product_catalog.json`).
+- Rebuilt `research.py` with product validation, HTTPS/price enforcement, vendor preference sorting, provenance tracking, and safe fallback logic.
+- Added Discord reliability layer (`automation/discord_reliable.py`) with exponential backoff retry, dead-letter queue, and automatic retry cron (disabled pending user re-enable).
+- Added Singapore resilience content framing: discovery and research now support three-lens analysis (Cost Pressure, Disruption Risk, Mitigation/Preparedness) for practical Singapore consumer guidance.
+- Expanded product catalog with resilience categories: air purifiers (haze), dehumidifiers, portable power stations, water filter pitchers, vacuum sealers, water storage containers.
+- Fixed product screening config (`require_image_url: false`) to allow catalog-backed validation without image URLs.
+- Enhanced manual market signals for resilience topics with Singapore-specific evidence URLs and trend classifications.
 
 ## Constraints / missing prerequisites
 - Local unattended DAF logic exists, but all crons are currently disabled.
