@@ -3,95 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PriceScout.sg - Singapore Product Comparisons</title>
+    <title>PriceScout.sg - Singapore Product Comparisons 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6; 
-            color: #333;
-            background: #f5f5f5;
-        }
-        header { 
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        header p { color: #a0a0a0; font-size: 1.2em; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-        .page-list {
-            display: grid;
-            gap: 20px;
-        }
-        .page-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .page-card:hover { transform: translateY(-2px); }
-        .page-card a {
-            color: #1a1a2e;
-            text-decoration: none;
-            font-size: 1.3em;
-            font-weight: 600;
-        }
-        .page-card a:hover { color: #0066cc; }
-        .badge {
-            display: inline-block;
-            background: #27ae60;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75em;
-            margin-left: 10px;
-        }
-        .meta { color: #666; margin-top: 10px; font-size: 0.95em; }
-        footer {
-            background: #1a1a2e;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.8em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; opacity: 0.9; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .intro { text-align: center; margin-bottom: 40px; }
+        .intro h2 { color: #1a1a2e; margin-bottom: 15px; }
+        .intro p { color: #666; font-size: 1.1em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card a { text-decoration: none; color: inherit; }
+        .card h3 { color: #1a1a2e; font-size: 1.3em; margin-bottom: 10px; }
+        .card p { color: #666; margin-bottom: 15px; }
+        .card .meta { display: flex; gap: 15px; font-size: 0.9em; }
+        .badge { background: #667eea; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; }
+        .price { color: #27ae60; font-weight: 600; }
+        footer { background: #1a1a2e; color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
     </style>
 </head>
 <body>
     <header>
         <h1>PriceScout.sg</h1>
-        <p>Professional Product Comparisons for Singapore</p>
+        <p>Verified Product Comparisons for Singapore</p>
     </header>
     
     <div class="container">
-        <div class="page-list">
-            <div class="page-card">
-                <a href="daf-sites-resilience/air-purifiers-haze.html">Best Air Purifiers for Haze <span class="badge">5 Products</span></a>
-                <p class="meta">Compare Xiaomi, Philips, Levoit, Sharp, Dyson — Prices from S$158</p>
+        <div class="intro">
+            <h2>Compare Real Prices from Amazon SG, Shopee & Lazada</h2>
+            <p>We track prices across major Singapore retailers to help you find the best deals.</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <a href="daf-sites-resilience/air-purifiers.html">
+                    <h3>🌬️ Air Purifiers</h3>
+                    <p>Best for haze season. Compare Xiaomi, Philips, Levoit.</p>
+                    <div class="meta">
+                        <span class="badge">5 Products</span>
+                        <span class="price">From S$145</span>
+                    </div>
+                </a>
             </div>
-            <div class="page-card">
-                <a href="daf-sites-resilience/water-filter-pitchers.html">Best Water Filter Pitchers <span class="badge">5 Products</span></a>
-                <p class="meta">Compare Brita, Philips, LifeStraw, 3M, Xiaomi — Prices from S$35</p>
+            <div class="card">
+                <a href="daf-sites-resilience/dehumidifiers.html">
+                    <h3>💧 Dehumidifiers</h3>
+                    <p>Beat Singapore humidity. Novita, Philips, Mitsubishi.</p>
+                    <div class="meta">
+                        <span class="badge">5 Products</span>
+                        <span class="price">From S$189</span>
+                    </div>
+                </a>
             </div>
-            <div class="page-card">
-                <a href="daf-sites-resilience/portable-power-stations.html">Best Portable Power Stations <span class="badge">5 Products</span></a>
-                <p class="meta">Compare EcoFlow, Jackery, Bluetti, Xiaomi, Anker — Prices from S$329</p>
+            <div class="card">
+                <a href="daf-sites-resilience/water-filter-pitchers.html">
+                    <h3>💧 Water Filter Pitchers</h3>
+                    <p>Clean drinking water. Brita, Philips, ZeroWater.</p>
+                    <div class="meta">
+                        <span class="badge">5 Products</span>
+                        <span class="price">From S$46</span>
+                    </div>
+                </a>
             </div>
-            <div class="page-card">
-                <a href="daf-sites-resilience/dehumidifiers.html">Best Dehumidifiers <span class="badge">5 Products</span></a>
-                <p class="meta">Compare Novita, Philips, Midea, Europace, Mitsubishi — Prices from S$189</p>
+            <div class="card">
+                <a href="daf-sites-resilience/portable-power-stations.html">
+                    <h3>🔋 Portable Power Stations</h3>
+                    <p>Backup power for home. Jackery, EcoFlow, Anker.</p>
+                    <div class="meta">
+                        <span class="badge">5 Products</span>
+                        <span class="price">From S$329</span>
+                    </div>
+                </a>
             </div>
-            <div class="page-card">
-                <a href="daf-sites-resilience/vacuum-sealer-machines.html">Best Vacuum Sealer Machines <span class="badge">5 Products</span></a>
-                <p class="meta">Compare FoodSaver, Anova, NutriChef, Toyomi — Prices from S$78</p>
+            <div class="card">
+                <a href="daf-sites-resilience/vacuum-sealer-machines.html">
+                    <h3>🥘 Vacuum Sealer Machines</h3>
+                    <p>Food storage & savings. FoodSaver, Anova, NutriChef.</p>
+                    <div class="meta">
+                        <span class="badge">5 Products</span>
+                        <span class="price">From S$78</span>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     
     <footer>
-        <p>© 2026 PriceScout.sg — Real prices from Shopee, Lazada, Amazon SG</p>
+        <p>© 2026 PriceScout.sg — Real prices, real reviews, real savings.</p>
     </footer>
 </body>
 </html>
