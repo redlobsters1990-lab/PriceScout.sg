@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "asset_id": "resilience_004",
+    "topic": "dehumidifiers singapore",
+    "generated_at": "2026-03-26T03:56:50+00:00",
+    "page_type": "comparison_page_draft",
+    "status": "draft_pending_products",
+    "score": "92/100",
+    "screening_mode": "catalog_live",
+    "validated_products": 5
+  },
+  "seo": {
+    "title": "Best Dehumidifiers Singapore (2026 Comparison)",
+    "meta_description": "Compare the best dehumidifiers in Singapore. Prices, reviews, and where to buy. Updated 2026.",
+    "canonical_url": "/reviews/dehumidifiers"
+  },
+  "content": {
+    "headline": "Best Dehumidifiers in Singapore (2026)",
+    "subheadline": "Compare prices, features, and reviews before you buy.",
+    "introduction": "Looking for the best dehumidifiers in Singapore? You're not alone. \n\nHigh humidity in Singapore causes condensation, mold, and discomfort\u2014driving demand for resilience products to protect homes\n\nCommon questions we address:\n- What size dehumidifier do I need for my HDB room?\n- How much electricity does a dehumidifier use?\n\n\nWe've researched the market and will be adding detailed product comparisons, \nprices from local retailers, and affiliate links shortly. \n\n**[This page is a draft\u2014product data is being sourced. Sign up below to be \nnotified when the full comparison is ready.]**",
+    "why_trust": "### Why Trust This Comparison\n\nOur research is based on:\n- https://www.nea.gov.sg/weather\n\nWe independently research products and update prices regularly. \nWhen you buy through our links, we may earn a commission at no extra cost to you.",
+    "comparison_table": {
+      "headers": [
+        "Product",
+        "capacity_liters",
+        "room_size",
+        "energy_rating",
+        "drainage",
+        "price",
+        "Where to Buy"
+      ],
+      "rows": [
+        {
+          "product": "[Product 1 Name TBD]",
+          "capacity_liters": "[capacity_liters]",
+          "room_size": "[room_size]",
+          "energy_rating": "[energy_rating]",
+          "drainage": "[drainage]",
+          "price": "[price]",
+          "where_to_buy": "[Link pending]"
+        },
+        {
+          "product": "[Product 2 Name TBD]",
+          "capacity_liters": "[capacity_liters]",
+          "room_size": "[room_size]",
+          "energy_rating": "[energy_rating]",
+          "drainage": "[drainage]",
+          "price": "[price]",
+          "where_to_buy": "[Link pending]"
+        },
+        {
+          "product": "[Product 3 Name TBD]",
+          "capacity_liters": "[capacity_liters]",
+          "room_size": "[room_size]",
+          "energy_rating": "[energy_rating]",
+          "drainage": "[drainage]",
+          "price": "[price]",
+          "where_to_buy": "[Link pending]"
+        }
+      ],
+      "disclaimer": "Prices and availability subject to change. Links to be added."
+    },
+    "top_products": [
+      {
+        "rank": 1,
+        "name": "[Product 1 Name TBD]",
+        "brand": "[Brand TBD]",
+        "price": "[Price TBD]",
+        "key_features": [
+          "[capacity_liters data pending]",
+          "[room_size data pending]",
+          "[energy_rating data pending]"
+        ],
+        "affiliate_link": "#affiliate-link-pending",
+        "image_placeholder": "product-1-image.jpg",
+        "availability": "Availability to be confirmed"
+      },
+      {
+        "rank": 2,
+        "name": "[Product 2 Name TBD]",
+        "brand": "[Brand TBD]",
+        "price": "[Price TBD]",
+        "key_features": [
+          "[capacity_liters data pending]",
+          "[room_size data pending]",
+          "[energy_rating data pending]"
+        ],
+        "affiliate_link": "#affiliate-link-pending",
+        "image_placeholder": "product-2-image.jpg",
+        "availability": "Availability to be confirmed"
+      },
+      {
+        "rank": 3,
+        "name": "[Product 3 Name TBD]",
+        "brand": "[Brand TBD]",
+        "price": "[Price TBD]",
+        "key_features": [
+          "[capacity_liters data pending]",
+          "[room_size data pending]",
+          "[energy_rating data pending]"
+        ],
+        "affiliate_link": "#affiliate-link-pending",
+        "image_placeholder": "product-3-image.jpg",
+        "availability": "Availability to be confirmed"
+      }
+    ],
+    "buying_guide": "### What to Look for When Buying Dehumidifiers\n\n**Capacity Liters**: Consider this when comparing options.\n\n**Room Size**: Consider this when comparing options.\n\n**Energy Rating**: Consider this when comparing options.\n\n**Drainage**: Consider this when comparing options.\n\n**Price**: Compare across retailers\u2014prices can vary significantly.\n\n### Where to Buy in Singapore\n\n- **Shopee Mall**: Often competitive prices, official stores available\n- **Lazada**: Good for electronics, frequent promotions\n- **Amazon SG**: Reliable for imports, Prime delivery\n- **Courts, Harvey Norman**: For large appliances with installation\n\n*[Specific retailer links will be added once products are sourced]*",
+    "faqs": [
+      {
+        "question": "What size dehumidifier do I need for my HDB room?",
+        "answer": "[Detailed answer to be added with product-specific information]"
+      },
+      {
+        "question": "How much electricity does a dehumidifier use?",
+        "answer": "[Detailed answer to be added with product-specific information]"
+      },
+      {
+        "question": "Where can I buy dehumidifiers in Singapore?",
+        "answer": "[Retailer comparison to be added]"
+      },
+      {
+        "question": "How much do dehumidifiers cost in Singapore?",
+        "answer": "[Price range to be added once products are sourced]"
+      }
+    ]
+  },
+  "placeholders": {
+    "missing_data": [],
+    "action_required": [
+      "Source 3-5 real product listings from Shopee/Lazada/Amazon",
+      "Capture product images (merchant-provided or original)",
+      "Generate or verify affiliate links",
+      "Update prices and availability"
+    ],
+    "estimated_completion": "2-3 business days with product sourcing"
+  },
+  "monetization": {
+    "affiliate_links_ready": false,
+    "contact_capture_enabled": true,
+    "contact_capture_form": {
+      "title": "Get notified when Dehumidifiers comparison is ready",
+      "fields": [
+        "email",
+        "product_interest"
+      ],
+      "cta": "Notify Me"
+    }
+  }
+}
