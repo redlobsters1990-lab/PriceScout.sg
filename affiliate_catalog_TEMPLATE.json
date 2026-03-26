@@ -1,0 +1,273 @@
+{
+  "_instructions": "Replace 'YOUR_AFFILIATE_LINK_HERE' with your actual affiliate links from Shopee/Amazon/Lazada affiliate programs",
+  
+  "air-purifiers": {
+    "title": "Air Purifiers",
+    "tagline": "Breathe cleaner air. Protect your family from haze and pollution.",
+    "why_need": "Singapore faces annual haze from regional forest fires (Aug-Oct), plus year-round PM2.5 from traffic and industry. Air purifiers remove harmful particles, reduce allergies, and improve sleep quality—especially important for children and elderly.",
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800",
+    "products": [
+      {
+        "name": "Xiaomi Smart Air Purifier 4",
+        "price_range": "S$150-200",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["400m³/h CADR", "App control", "360° air intake", "Quiet mode 32dB"],
+        "best_for": "Medium rooms (25-40m²), haze protection",
+        "rating": "4.5/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Levoit Core 300",
+        "price_range": "S$140-180",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["H13 True HEPA filter", "Sleep mode", "Compact design", "Energy efficient"],
+        "best_for": "Bedrooms, small apartments, allergy sufferers",
+        "rating": "4.6/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Philips Series 2000i",
+        "price_range": "S$250-350",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["AeraSense technology", "App control", "98m² coverage", "HEPA filter"],
+        "best_for": "Large living rooms, tech-savvy users",
+        "rating": "4.4/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Xiaomi Air Purifier 4 Pro",
+        "price_range": "S$280-380",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["500m³/h CADR", "OLED display", "60m² coverage", "Smart home compatible"],
+        "best_for": "Large homes, maximum coverage",
+        "rating": "4.7/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Dyson Purifier Cool",
+        "price_range": "S$600-800",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["HEPA H13 filter", "Air multiplier", "Real-time reporting", "Cooling + purifying"],
+        "best_for": "Premium choice, dual function",
+        "rating": "4.3/5",
+        "stock_status": "Check availability"
+      }
+    ]
+  },
+  
+  "dehumidifiers": {
+    "title": "Dehumidifiers",
+    "tagline": "Fight humidity. Protect your home from mold and mildew.",
+    "why_need": "Singapore averages 70-90% humidity year-round, creating ideal conditions for mold growth. Dehumidifiers prevent mold on walls and furniture, protect electronics from moisture damage, reduce dust mites, and make hot weather feel more comfortable.",
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800",
+    "products": [
+      {
+        "name": "Novita ND298",
+        "price_range": "S$250-300",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["12L/day capacity", "Singapore brand", "Local warranty", "Quiet 40dB operation"],
+        "best_for": "HDB bedrooms, local support",
+        "rating": "4.5/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Philips 2-in-1 Purifier & Dehumidifier",
+        "price_range": "S$450-550",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Dual function", "HEPA filter", "Large tank", "App control"],
+        "best_for": "All-in-one solution, large rooms",
+        "rating": "4.6/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Midea 12L Dehumidifier",
+        "price_range": "S$180-220",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Budget-friendly", "12L capacity", "Easy to use", "Portable with wheels"],
+        "best_for": "Budget-conscious, small spaces",
+        "rating": "4.2/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Novita ND690",
+        "price_range": "S$350-420",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["20L/day capacity", "Continuous drainage", "Timer function", "Large rooms"],
+        "best_for": "Large HDB flats, high humidity areas",
+        "rating": "4.4/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Mitsubishi MJ-E14CG",
+        "price_range": "S$550-650",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Japan-made compressor", "Energy efficient", "Premium build quality", "Super quiet"],
+        "best_for": "Premium choice, long-term investment",
+        "rating": "4.7/5",
+        "stock_status": "Check availability"
+      }
+    ]
+  },
+  
+  "water-filter-pitchers": {
+    "title": "Water Filter Pitchers",
+    "tagline": "Clean water for your family. Remove chlorine, lead, and contaminants.",
+    "why_need": "While Singapore tap water is safe, aging pipes in older HDB flats can add metals and contaminants. Filter pitchers remove chlorine taste, reduce lead and copper, save S$500+ yearly vs bottled water, and reduce plastic waste. Water tastes better and is healthier for your family.",
+    "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800",
+    "products": [
+      {
+        "name": "Brita Marella XL",
+        "price_range": "S$40-55",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["3.5L capacity", "Easy-fill lid", "Widely available filters", "BPA-free plastic"],
+        "best_for": "Small families, everyday use",
+        "rating": "4.4/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Brita UltraMax Dispenser",
+        "price_range": "S$60-75",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["18L capacity", "Fridge-friendly", "Spigot dispenser", "Less refilling"],
+        "best_for": "Large families, offices",
+        "rating": "4.5/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "3M Water Filter Pitcher WP3000",
+        "price_range": "S$50-65",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["NSF certified", "Fast flow rate", "Local warranty support", "Durable build"],
+        "best_for": "Reliable performance, local support",
+        "rating": "4.3/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Philips AWP2980",
+        "price_range": "S$55-70",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["4-stage filtration", "Digital filter indicator", "Sleek modern design", "Easy clean"],
+        "best_for": "Tech features, modern kitchens",
+        "rating": "4.4/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "ZeroWater 10-Cup Pitcher",
+        "price_range": "S$80-100",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["5-stage filtration", "0 TDS water", "IAPMO certified", "Maximum purification"],
+        "best_for": "Maximum purity, health-conscious",
+        "rating": "4.2/5",
+        "stock_status": "Check availability"
+      }
+    ]
+  },
+  
+  "portable-power-stations": {
+    "title": "Portable Power Stations",
+    "tagline": "Power anywhere. Be prepared for outages and outdoor adventures.",
+    "why_need": "Singapore power outages are rare but can happen during storms or maintenance. Power stations keep essential devices running: CPAP machines for sleep apnea, home office equipment during WFH, medical devices, and phones/lights during emergencies. Also great for camping and outdoor activities.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+    "products": [
+      {
+        "name": "Jackery Explorer 240",
+        "price_range": "S$380-450",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["240Wh capacity", "Pure sine wave", "Lightweight 3kg", "Reliable brand"],
+        "best_for": "Entry-level, camping, small devices",
+        "rating": "4.6/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Jackery Explorer 250 (SG Plug)",
+        "price_range": "S$320-380",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Singapore 3-pin plug", "257Wh capacity", "Compact size", "HDB-friendly"],
+        "best_for": "Local plug compatibility, no adapter needed",
+        "rating": "4.5/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "EcoFlow RIVER 288Wh",
+        "price_range": "S$420-500",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["X-Stream fast charging", "3x AC outlets", "LED flashlight", "Multiple ports"],
+        "best_for": "Fast recharge, powering multiple devices",
+        "rating": "4.4/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Bluetti EB3A",
+        "price_range": "S$400-480",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["268Wh capacity", "Wireless charging pad", "600W surge", "Compact design"],
+        "best_for": "Wireless charging, modern features",
+        "rating": "4.3/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Anker 521 PowerHouse",
+        "price_range": "S$340-400",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["5-year warranty", "256Wh capacity", "Trusted brand", "Lightweight"],
+        "best_for": "Long warranty, brand reliability",
+        "rating": "4.5/5",
+        "stock_status": "Check availability"
+      }
+    ]
+  },
+  
+  "vacuum-sealer-machines": {
+    "title": "Vacuum Sealer Machines",
+    "tagline": "Save food. Save money. Keep ingredients fresh longer.",
+    "why_need": "Singapore food prices are rising. Vacuum sealers let you buy meat and seafood in bulk during sales (save 30-50%), keep food fresh 3-5x longer, reduce waste, and enable sous vide cooking. Average Singapore household wastes S$200+ of food yearly—this pays for itself in months.",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+    "products": [
+      {
+        "name": "Toyomi VS 6800",
+        "price_range": "S$70-90",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Singapore brand", "Wet/dry modes", "Compact storage", "Local warranty"],
+        "best_for": "Budget choice, local support",
+        "rating": "4.2/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "NutriChef Vacuum Sealer",
+        "price_range": "S$85-110",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Starter kit included", "Simple one-touch", "Good reviews", "Compact size"],
+        "best_for": "Beginners, starter kit value",
+        "rating": "4.3/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "FoodSaver VS0150",
+        "price_range": "S$160-200",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Leading brand", "Moist/dry modes", "Built-in roll storage", "Reliable"],
+        "best_for": "Brand reputation, long-term use",
+        "rating": "4.6/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "Anova Precision Sealer Pro",
+        "price_range": "S$190-230",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["High suction power", "Handheld mode", "Chef-grade quality", "Sous vide ready"],
+        "best_for": "Sous vide cooking, serious home cooks",
+        "rating": "4.5/5",
+        "stock_status": "Check availability"
+      },
+      {
+        "name": "SousVide Supreme VS3000",
+        "price_range": "S$230-280",
+        "affiliate_url": "YOUR_AFFILIATE_LINK_HERE",
+        "features": ["Premium build", "Pulse function", "Marinate mode", "Professional grade"],
+        "best_for": "Premium choice, maximum features",
+        "rating": "4.4/5",
+        "stock_status": "Check availability"
+      }
+    ]
+  }
+}
