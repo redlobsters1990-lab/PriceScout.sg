@@ -3,97 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PriceScout.sg - Singapore Product Comparisons 2026</title>
+    <title>PriceScout — Singapore Product Comparisons</title>
+    <meta name="description" content="Compare prices across Amazon SG, Shopee, and Lazada. Find the best deals in Singapore.">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --bg: #f5f5f7;
+            --text: #1d1d1f;
+            --text-secondary: #86868b;
+            --blue: #0071e3;
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; }
-        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 2.8em; margin-bottom: 10px; }
-        header p { font-size: 1.2em; opacity: 0.9; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .intro { text-align: center; margin-bottom: 40px; }
-        .intro h2 { color: #1a1a2e; margin-bottom: 15px; }
-        .intro p { color: #666; font-size: 1.1em; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: white; padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s; }
-        .card:hover { transform: translateY(-5px); }
-        .card a { text-decoration: none; color: inherit; }
-        .card h3 { color: #1a1a2e; font-size: 1.3em; margin-bottom: 10px; }
-        .card p { color: #666; margin-bottom: 15px; }
-        .card .meta { display: flex; gap: 15px; font-size: 0.9em; }
-        .badge { background: #667eea; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; }
-        .price { color: #27ae60; font-weight: 600; }
-        footer { background: #1a1a2e; color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fff;
+            color: var(--text);
+            line-height: 1.47059;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Nav */
+        nav {
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+        }
+        nav a {
+            color: #f5f5f7;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        nav a:hover { opacity: 1; }
+        nav .logo { font-weight: 600; }
+        
+        /* Hero */
+        .hero {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            margin-bottom: 15px;
+        }
+        .hero .tagline {
+            font-size: 28px;
+            font-weight: 400;
+            color: #f5f5f7;
+            margin-bottom: 30px;
+        }
+        .hero .cta {
+            display: inline-flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .btn {
+            background: var(--blue);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 400;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: #0077ed; }
+        .link {
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .link:hover { text-decoration: underline; }
+        
+        /* Section */
+        .section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.003em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 21px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 50px;
+        }
+        
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: var(--bg);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        .card .price {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--blue);
+        }
+        
+        /* Footer */
+        footer {
+            background: #f5f5f7;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 40px; }
+            .hero .tagline { font-size: 21px; }
+            .section h2 { font-size: 32px; }
+            .grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>PriceScout.sg</h1>
-        <p>Verified Product Comparisons for Singapore</p>
-    </header>
-    
-    <div class="container">
-        <div class="intro">
-            <h2>Compare Real Prices from Amazon SG, Shopee & Lazada</h2>
-            <p>We track prices across major Singapore retailers to help you find the best deals.</p>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">PriceScout</a>
+            <a href="#comparisons">Comparisons</a>
         </div>
+    </nav>
+    
+    <section class="hero">
+        <h1>Compare. Save. Buy Smart.</h1>
+        <p class="tagline">Real prices from Amazon SG, Shopee, and Lazada.</p>
+        <div class="cta">
+            <a href="#comparisons" class="btn">See Comparisons</a>
+            <a href="#how" class="link">How it works ></a>
+        </div>
+    </section>
+    
+    <section class="section" id="comparisons">
+        <h2>What are you shopping for?</h2>
+        <p>We track prices across major Singapore retailers to help you find the best deals.</p>
         
         <div class="grid">
-            <div class="card">
-                <a href="daf-sites-resilience/air-purifiers.html">
-                    <h3>🌬️ Air Purifiers</h3>
-                    <p>Best for haze season. Compare Xiaomi, Philips, Levoit.</p>
-                    <div class="meta">
-                        <span class="badge">5 Products</span>
-                        <span class="price">From S$145</span>
-                    </div>
-                </a>
+            <a href="daf-sites-resilience/air-purifiers.html" class="card">
+                <div class="icon">🌬️</div>
+                <h3>Air Purifiers</h3>
+                <p>Beat the haze. Compare Xiaomi, Philips, Levoit.</p>
+                <div class="price">From S$145</div>
+            </a>
+            <a href="daf-sites-resilience/dehumidifiers.html" class="card">
+                <div class="icon">💧</div>
+                <h3>Dehumidifiers</h3>
+                <p>Beat Singapore humidity. Novita, Philips, Mitsubishi.</p>
+                <div class="price">From S$189</div>
+            </a>
+            <a href="daf-sites-resilience/water-filter-pitchers.html" class="card">
+                <div class="icon">💧</div>
+                <h3>Water Filter Pitchers</h3>
+                <p>Clean drinking water. Brita, Philips, ZeroWater.</p>
+                <div class="price">From S$46</div>
+            </a>
+            <a href="daf-sites-resilience/portable-power-stations.html" class="card">
+                <div class="icon">🔋</div>
+                <h3>Portable Power Stations</h3>
+                <p>Backup power for home. Jackery, EcoFlow, Anker.</p>
+                <div class="price">From S$329</div>
+            </a>
+            <a href="daf-sites-resilience/vacuum-sealer-machines.html" class="card">
+                <div class="icon">🥘</div>
+                <h3>Vacuum Sealer Machines</h3>
+                <p>Food storage & savings. FoodSaver, Anova.</p>
+                <div class="price">From S$78</div>
+            </a>
+        </div>
+    </section>
+    
+    <section class="section" id="how" style="background: var(--bg);">
+        <h2>How PriceScout Works</h2>
+        <p>We search, compare, and verify so you don't have to.</p>
+        <div class="grid" style="margin-top: 50px;">
+            <div class="card" style="background: #fff;">
+                <h3>1. We Monitor</h3>
+                <p>Our system tracks prices across Amazon SG, Shopee, and Lazada 24/7.</p>
             </div>
-            <div class="card">
-                <a href="daf-sites-resilience/dehumidifiers.html">
-                    <h3>💧 Dehumidifiers</h3>
-                    <p>Beat Singapore humidity. Novita, Philips, Mitsubishi.</p>
-                    <div class="meta">
-                        <span class="badge">5 Products</span>
-                        <span class="price">From S$189</span>
-                    </div>
-                </a>
+            <div class="card" style="background: #fff;">
+                <h3>2. We Compare</h3>
+                <p>Side-by-side comparisons of features, prices, and reviews.</p>
             </div>
-            <div class="card">
-                <a href="daf-sites-resilience/water-filter-pitchers.html">
-                    <h3>💧 Water Filter Pitchers</h3>
-                    <p>Clean drinking water. Brita, Philips, ZeroWater.</p>
-                    <div class="meta">
-                        <span class="badge">5 Products</span>
-                        <span class="price">From S$46</span>
-                    </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="daf-sites-resilience/portable-power-stations.html">
-                    <h3>🔋 Portable Power Stations</h3>
-                    <p>Backup power for home. Jackery, EcoFlow, Anker.</p>
-                    <div class="meta">
-                        <span class="badge">5 Products</span>
-                        <span class="price">From S$329</span>
-                    </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="daf-sites-resilience/vacuum-sealer-machines.html">
-                    <h3>🥘 Vacuum Sealer Machines</h3>
-                    <p>Food storage & savings. FoodSaver, Anova, NutriChef.</p>
-                    <div class="meta">
-                        <span class="badge">5 Products</span>
-                        <span class="price">From S$78</span>
-                    </div>
-                </a>
+            <div class="card" style="background: #fff;">
+                <h3>3. You Save</h3>
+                <p>Find the best deals with verified links to trusted retailers.</p>
             </div>
         </div>
-    </div>
+    </section>
     
     <footer>
-        <p>© 2026 PriceScout.sg — Real prices, real reviews, real savings.</p>
+        <p>© 2026 PriceScout.sg — Real prices. Real reviews. Real savings.</p>
+        <p>Prices verified from Amazon SG, Shopee, and Lazada.</p>
     </footer>
 </body>
 </html>

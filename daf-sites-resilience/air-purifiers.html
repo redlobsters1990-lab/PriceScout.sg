@@ -3,221 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Air Purifiers Singapore 2026 | Real Prices & Reviews</title>
-    <meta name="description" content="Compare air purifiers prices in Singapore. Verified listings from Amazon SG, Shopee, Lazada. Updated March 2026.">
+    <title>Air Purifiers — PriceScout</title>
+    <meta name="description" content="Compare the best air purifiers in Singapore. Real prices from Amazon SG, Shopee, Lazada.">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --bg: #f5f5f7;
+            --text: #1d1d1f;
+            --text-secondary: #86868b;
+            --blue: #0071e3;
+            --blue-hover: #0077ed;
+            --card-bg: #ffffff;
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
-        /* Header */
-        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px 0; text-align: center; }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
-        header p { font-size: 1.1em; opacity: 0.9; }
-        .badge { background: #ff6b6b; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7em; margin-left: 10px; vertical-align: middle; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.47059;
+            -webkit-font-smoothing: antialiased;
+        }
         
-        /* Winner Box */
-        .winner { background: white; margin: 30px 0; padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 3px solid #ffd700; }
-        .winner-label { background: linear-gradient(135deg, #ffd700, #ffed4e); color: #333; padding: 8px 16px; border-radius: 20px; font-weight: 700; display: inline-block; margin-bottom: 15px; }
-        .winner h2 { color: #1a1a2e; margin-bottom: 10px; }
-        .winner .price { font-size: 2.5em; color: #e74c3c; font-weight: 700; margin: 15px 0; }
-        .winner .store { color: #666; margin-bottom: 15px; }
-        .btn { display: inline-block; background: #27ae60; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1em; transition: all 0.3s; }
-        .btn:hover { background: #219a52; transform: translateY(-2px); }
+        /* Navigation */
+        nav {
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+        }
+        nav a {
+            color: #f5f5f7;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        nav a:hover { opacity: 1; }
+        nav .logo { font-weight: 600; }
         
-        /* Comparison Table */
-        .table-section { background: white; margin: 30px 0; padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .table-section h2 { margin-bottom: 20px; color: #1a1a2e; }
-        table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
-        th { background: #667eea; color: white; padding: 16px 12px; text-align: left; font-weight: 600; }
-        td { padding: 16px 12px; border-bottom: 1px solid #eee; }
-        tr:hover { background: #f8f9fa; }
-        .product-name { font-weight: 600; color: #1a1a2e; font-size: 1.05em; }
-        .price { color: #e74c3c; font-weight: 700; font-size: 1.1em; }
-        .rating { color: #f39c12; font-weight: 600; }
-        .store-tag { background: #e8f4f8; color: #0066cc; padding: 4px 10px; border-radius: 4px; font-size: 0.85em; }
-        .btn-small { background: #0066cc; color: white; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-size: 0.9em; font-weight: 600; }
-        .btn-small:hover { background: #0052a3; }
+        /* Hero Section */
+        .hero {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            margin-bottom: 10px;
+        }
+        .hero .tagline {
+            font-size: 28px;
+            font-weight: 400;
+            color: #f5f5f7;
+            margin-bottom: 20px;
+        }
+        .hero .price {
+            font-size: 21px;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+        .hero .cta {
+            display: inline-flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .btn {
+            background: var(--blue);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 400;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: var(--blue-hover); }
+        .link {
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .link:hover { text-decoration: underline; }
         
-        /* Product Cards */
-        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0; }
-        .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .card-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px; }
-        .card h3 { color: #1a1a2e; font-size: 1.2em; margin-bottom: 8px; }
-        .rank { background: #667eea; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
-        .card .price { font-size: 1.8em; color: #e74c3c; font-weight: 700; margin: 10px 0; }
-        .card .store { color: #666; font-size: 0.9em; margin-bottom: 10px; }
-        .why { background: #f0f7ff; padding: 12px; border-radius: 8px; margin: 15px 0; font-size: 0.95em; border-left: 4px solid #0066cc; }
+        /* Section */
+        .section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.003em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 21px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
         
-        /* Guide */
-        .guide { background: white; margin: 30px 0; padding: 30px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .guide h2 { margin-bottom: 20px; color: #1a1a2e; }
-        .guide ul { margin-left: 20px; }
-        .guide li { margin: 12px 0; }
+        /* Compare Grid */
+        .compare {
+            background: #fff;
+            padding: 100px 20px;
+        }
+        .compare-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .compare-card {
+            background: var(--bg);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .compare-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .compare-card.featured {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+        .compare-card.featured .price { color: rgba(255,255,255,0.9); }
+        .compare-card.featured .store { color: rgba(255,255,255,0.7); }
         
-        footer { background: #1a1a2e; color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
-        footer p { opacity: 0.8; margin: 5px 0; }
-        .disclaimer { font-size: 0.85em; opacity: 0.6; margin-top: 20px; }
+        .compare-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .compare-card .store {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 15px;
+        }
+        .compare-card .price {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .compare-card .rating {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .compare-card .desc {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .compare-card.featured .desc { color: rgba(255,255,255,0.8); }
+        
+        /* Table */
+        .table-section {
+            padding: 100px 20px;
+            background: var(--bg);
+        }
+        .table-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+        th {
+            background: #f5f5f7;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #f5f5f7;
+        }
+        tr:last-child td { border-bottom: none; }
+        .product-name { font-weight: 600; font-size: 16px; }
+        .product-price { font-weight: 700; color: var(--blue); }
+        .btn-small {
+            background: var(--blue);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 13px;
+            transition: background 0.3s;
+        }
+        .btn-small:hover { background: var(--blue-hover); }
+        
+        /* Footer */
+        footer {
+            background: #f5f5f7;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
         
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8em; }
-            .cards { grid-template-columns: 1fr; }
-            table { font-size: 0.85em; }
-            th, td { padding: 12px 8px; }
+            .hero h1 { font-size: 40px; }
+            .hero .tagline { font-size: 21px; }
+            .section h2 { font-size: 32px; }
+            .compare-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="container">
-            <h1>Best Air Purifiers Singapore <span class="badge">2026</span></h1>
-            <p>Verified prices from Amazon SG, Shopee, Lazada | Updated March 2026</p>
+            <a href="../index.html" class="logo">PriceScout</a>
+            <a href="../index.html">Comparisons</a>
         </div>
-    </header>
+    </nav>
     
-    <div class="container">
-        <!-- Best Value Winner -->
-        <div class="winner">
-            <span class="winner-label">🏆 BEST VALUE</span>
-            <h2>Levoit Core 300 Air Purifier</h2>
-            <p class="store">Amazon SG</p>
-            <p class="price">S$145</p>
-            <p class="rating">★★★★ 4.6/5</p>
-            <p style="margin: 15px 0; color: #555;">High CADR for PM2.5, quiet sleep mode, popular in Singapore for haze</p>
-            <a href="https://www.amazon.sg/stores/Levoit/AirPurifiers/page/B6CB3A71-4B53-4DFB-940F-EA3DAD7D2867" class="btn" target="_blank" rel="nofollow noopener">Check Price on Amazon →</a>
+    <section class="hero">
+        <h1>Air Purifiers</h1>
+        <p class="tagline">Breathe better. Live better.</p>
+        <p class="price">From S$145</p>
+        <div class="cta">
+            <a href="https://www.amazon.sg/stores/Levoit/AirPurifiers/page/B6CB3A71-4B53-4DFB-940F-EA3DAD7D2867" class="btn" target="_blank" rel="nofollow">Check Best Price</a>
+            <a href="#compare" class="link">Compare all models ></a>
+        </div>
+    </section>
+    
+    <section class="compare" id="compare">
+        <div class="section">
+            <h2>Which one is right for you?</h2>
+            <p>Compare features and find the perfect fit for your home.</p>
         </div>
         
-        <!-- Comparison Table -->
-        <div class="table-section">
-            <h2>📊 Price Comparison</h2>
+        <div class="compare-grid">
+            <div class="compare-card featured">
+                <div class="store">Amazon SG</div>
+                <h3>Levoit Core 300 Air Purifier</h3>
+                <div class="price">S$145</div>
+                <div class="rating">★★★★ 4.6/5</div>
+                <div class="desc">High CADR for PM2.5, quiet sleep mode, popular in Singapore for haze</div>
+                <a href="https://www.amazon.sg/stores/Levoit/AirPurifiers/page/B6CB3A71-4B53-4DFB-940F-EA3DAD7D2867" class="btn" target="_blank" rel="nofollow">Buy Now</a>
+            </div>
+            <div class="compare-card">
+                <div class="store">Amazon SG</div>
+                <h3>Xiaomi Smart Air Purifier 4 Compact</h3>
+                <div class="price">S$158</div>
+                <div class="rating">★★★★ 4.4/5</div>
+                <div class="desc">Compact size for HDB rooms, quiet operation, affordable replacement filters</div>
+                <a href="https://www.amazon.sg/Xiaomi-BHR5860EU-Purifier-Compact-AC-M18-SC/dp/B0B6FHKKHP" class="btn" target="_blank" rel="nofollow">Buy Now</a>
+            </div>
+            <div class="compare-card">
+                <div class="store">Amazon SG</div>
+                <h3>Xiaomi Smart Air Purifier 4 EU</h3>
+                <div class="price">S$189</div>
+                <div class="rating">★★★★ 4.5/5</div>
+                <div class="desc">Smart app control, HEPA filter, 400m³/h CADR for haze protection</div>
+                <a href="https://www.amazon.sg/Xiaomi-Smart-Air-Purifier-EU/dp/B09NDVN6YR" class="btn" target="_blank" rel="nofollow">Buy Now</a>
+            </div>
+            <div class="compare-card">
+                <div class="store">Amazon SG</div>
+                <h3>Philips Series 600i AC0650/10</h3>
+                <div class="price">S$249</div>
+                <div class="rating">★★★★ 4.3/5</div>
+                <div class="desc">2-in-1 purifier and dehumidifier, app control, HEPA filter</div>
+                <a href="https://www.amazon.sg/Philips-AC0650-10-Purifier-44m2-170m3/dp/B09C13L7L8" class="btn" target="_blank" rel="nofollow">Buy Now</a>
+            </div>
+            <div class="compare-card">
+                <div class="store">Shopee</div>
+                <h3>Xiaomi Smart Air Purifier 4 Pro</h3>
+                <div class="price">S$299</div>
+                <div class="rating">★★★★ 4.7/5</div>
+                <div class="desc">500m³/h CADR, large room coverage, OLED display</div>
+                <a href="https://shopee.sg/Xiaomi-Smart-Air-Purifier-4-Pro-i.178877065.17925278734" class="btn" target="_blank" rel="nofollow">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="table-section">
+        <div class="section">
+            <h2>Complete Comparison</h2>
+            <p>All models side by side.</p>
+        </div>
+        
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Product</th>
+                        <th>Model</th>
                         <th>Price</th>
                         <th>Rating</th>
                         <th>Store</th>
-                        <th>Action</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><span class="product-name">Levoit Core 300 Air Purifier</span></td>
-                        <td><span class="price">S$145</span></td>
-                        <td><span class="rating">★★★★ 4.6/5</span></td>
-                        <td><span class="store-tag">Amazon</span></td>
-                        <td><a href="https://www.amazon.sg/stores/Levoit/AirPurifiers/page/B6CB3A71-4B53-4DFB-940F-EA3DAD7D2867" class="btn-small" target="_blank" rel="nofollow noopener">View</a></td>
+                        <td><span class="product-price">S$145</span></td>
+                        <td>★★★★ 4.6/5</td>
+                        <td>Amazon SG</td>
+                        <td><a href="https://www.amazon.sg/stores/Levoit/AirPurifiers/page/B6CB3A71-4B53-4DFB-940F-EA3DAD7D2867" class="btn-small" target="_blank" rel="nofollow">View</a></td>
                     </tr>
                     <tr>
                         <td><span class="product-name">Xiaomi Smart Air Purifier 4 Compact</span></td>
-                        <td><span class="price">S$158</span></td>
-                        <td><span class="rating">★★★★ 4.4/5</span></td>
-                        <td><span class="store-tag">Amazon</span></td>
-                        <td><a href="https://www.amazon.sg/Xiaomi-BHR5860EU-Purifier-Compact-AC-M18-SC/dp/B0B6FHKKHP" class="btn-small" target="_blank" rel="nofollow noopener">View</a></td>
+                        <td><span class="product-price">S$158</span></td>
+                        <td>★★★★ 4.4/5</td>
+                        <td>Amazon SG</td>
+                        <td><a href="https://www.amazon.sg/Xiaomi-BHR5860EU-Purifier-Compact-AC-M18-SC/dp/B0B6FHKKHP" class="btn-small" target="_blank" rel="nofollow">View</a></td>
                     </tr>
                     <tr>
                         <td><span class="product-name">Xiaomi Smart Air Purifier 4 EU</span></td>
-                        <td><span class="price">S$189</span></td>
-                        <td><span class="rating">★★★★ 4.5/5</span></td>
-                        <td><span class="store-tag">Amazon</span></td>
-                        <td><a href="https://www.amazon.sg/Xiaomi-Smart-Air-Purifier-EU/dp/B09NDVN6YR" class="btn-small" target="_blank" rel="nofollow noopener">View</a></td>
+                        <td><span class="product-price">S$189</span></td>
+                        <td>★★★★ 4.5/5</td>
+                        <td>Amazon SG</td>
+                        <td><a href="https://www.amazon.sg/Xiaomi-Smart-Air-Purifier-EU/dp/B09NDVN6YR" class="btn-small" target="_blank" rel="nofollow">View</a></td>
                     </tr>
                     <tr>
                         <td><span class="product-name">Philips Series 600i AC0650/10</span></td>
-                        <td><span class="price">S$249</span></td>
-                        <td><span class="rating">★★★★ 4.3/5</span></td>
-                        <td><span class="store-tag">Amazon</span></td>
-                        <td><a href="https://www.amazon.sg/Philips-AC0650-10-Purifier-44m2-170m3/dp/B09C13L7L8" class="btn-small" target="_blank" rel="nofollow noopener">View</a></td>
+                        <td><span class="product-price">S$249</span></td>
+                        <td>★★★★ 4.3/5</td>
+                        <td>Amazon SG</td>
+                        <td><a href="https://www.amazon.sg/Philips-AC0650-10-Purifier-44m2-170m3/dp/B09C13L7L8" class="btn-small" target="_blank" rel="nofollow">View</a></td>
                     </tr>
                     <tr>
                         <td><span class="product-name">Xiaomi Smart Air Purifier 4 Pro</span></td>
-                        <td><span class="price">S$299</span></td>
-                        <td><span class="rating">★★★★ 4.7/5</span></td>
-                        <td><span class="store-tag">Shopee</span></td>
-                        <td><a href="https://shopee.sg/Xiaomi-Smart-Air-Purifier-4-Pro-i.178877065.17925278734" class="btn-small" target="_blank" rel="nofollow noopener">View</a></td>
+                        <td><span class="product-price">S$299</span></td>
+                        <td>★★★★ 4.7/5</td>
+                        <td>Shopee</td>
+                        <td><a href="https://shopee.sg/Xiaomi-Smart-Air-Purifier-4-Pro-i.178877065.17925278734" class="btn-small" target="_blank" rel="nofollow">View</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        
-        <!-- Individual Reviews -->
-        <div class="table-section">
-            <h2>📝 Detailed Reviews</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Levoit Core 300 Air Purifier</h3>
-                        <span class="rank">#1</span>
-                    </div>
-                    <p class="store">Amazon SG</p>
-                    <p class="price">S$145</p>
-                    <p class="rating">★★★★ 4.6/5</p>
-                    <div class="why">High CADR for PM2.5, quiet sleep mode, popular in Singapore for haze</div>
-                    <a href="https://www.amazon.sg/stores/Levoit/AirPurifiers/page/B6CB3A71-4B53-4DFB-940F-EA3DAD7D2867" class="btn" style="width: 100%; text-align: center; margin-top: 10px;" target="_blank" rel="nofollow noopener">Check Price</a>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Xiaomi Smart Air Purifier 4 Compact</h3>
-                        <span class="rank">#2</span>
-                    </div>
-                    <p class="store">Amazon SG</p>
-                    <p class="price">S$158</p>
-                    <p class="rating">★★★★ 4.4/5</p>
-                    <div class="why">Compact size for HDB rooms, quiet operation, affordable replacement filters</div>
-                    <a href="https://www.amazon.sg/Xiaomi-BHR5860EU-Purifier-Compact-AC-M18-SC/dp/B0B6FHKKHP" class="btn" style="width: 100%; text-align: center; margin-top: 10px;" target="_blank" rel="nofollow noopener">Check Price</a>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Xiaomi Smart Air Purifier 4 EU</h3>
-                        <span class="rank">#3</span>
-                    </div>
-                    <p class="store">Amazon SG</p>
-                    <p class="price">S$189</p>
-                    <p class="rating">★★★★ 4.5/5</p>
-                    <div class="why">Smart app control, HEPA filter, 400m³/h CADR for haze protection</div>
-                    <a href="https://www.amazon.sg/Xiaomi-Smart-Air-Purifier-EU/dp/B09NDVN6YR" class="btn" style="width: 100%; text-align: center; margin-top: 10px;" target="_blank" rel="nofollow noopener">Check Price</a>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Philips Series 600i AC0650/10</h3>
-                        <span class="rank">#4</span>
-                    </div>
-                    <p class="store">Amazon SG</p>
-                    <p class="price">S$249</p>
-                    <p class="rating">★★★★ 4.3/5</p>
-                    <div class="why">2-in-1 purifier and dehumidifier, app control, HEPA filter</div>
-                    <a href="https://www.amazon.sg/Philips-AC0650-10-Purifier-44m2-170m3/dp/B09C13L7L8" class="btn" style="width: 100%; text-align: center; margin-top: 10px;" target="_blank" rel="nofollow noopener">Check Price</a>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Xiaomi Smart Air Purifier 4 Pro</h3>
-                        <span class="rank">#5</span>
-                    </div>
-                    <p class="store">Shopee</p>
-                    <p class="price">S$299</p>
-                    <p class="rating">★★★★ 4.7/5</p>
-                    <div class="why">500m³/h CADR, large room coverage, OLED display</div>
-                    <a href="https://shopee.sg/Xiaomi-Smart-Air-Purifier-4-Pro-i.178877065.17925278734" class="btn" style="width: 100%; text-align: center; margin-top: 10px;" target="_blank" rel="nofollow noopener">Check Price</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Buying Guide -->
-        <div class="guide">
-            <h2>🛒 Singapore Buying Guide</h2>
-            <ul>
-                <li><strong>Compare prices:</strong> Check Amazon SG, Shopee, and Lazada. Prices vary 15-30% between stores.</li>
-                <li><strong>Check shipping:</strong> Some sellers ship from overseas (longer wait). Look for "Ships from Singapore".</li>
-                <li><strong>Warranty matters:</strong> Buy from official stores (Shopee Mall, Lazada Flagship) for local warranty.</li>
-                <li><strong>Read recent reviews:</strong> Check reviews from the last 3 months for current product quality.</li>
-                <li><strong>Watch for sales:</strong> 9.9, 11.11, and 12.12 sales often have 20-40% discounts.</li>
-            </ul>
-        </div>
-    </div>
+    </section>
     
     <footer>
-        <p>© 2026 PriceScout.sg — Singapore Product Comparisons</p>
-        <p class="disclaimer">We may earn commissions from affiliate links. Prices verified at time of publication but subject to change.</p>
+        <p>Prices verified from Amazon SG, Shopee, Lazada. Last updated: March 2026.</p>
+        <p>We may earn commissions from affiliate links.</p>
     </footer>
 </body>
 </html>
