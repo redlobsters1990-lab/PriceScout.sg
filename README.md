@@ -1,13 +1,20 @@
 # PriceScout.sg
 
-Static GitHub Pages site for PriceScout.sg.
+Singapore Product Comparisons for Emergency Preparedness
 
-## Files
-- `index.html` — homepage
-- `styles.css` — shared site styles
-- `methodology.html` — methodology page
-- `privacy.html` — privacy/disclosure page
-- `CNAME` — custom domain
+## Live Website
 
-## Publishing
-This repo is intended to be served by GitHub Pages.
+https://redlobsters1990-lab.github.io/PriceScout.sg/
+
+## Pages
+
+- Portable Power Stations
+- Water Filter Pitchers
+- Vacuum Sealer Machines
+- Solar Chargers
+- Emergency Radios
+- Surveillance Cameras
+- First Aid Kits
+- Fireproof Safes
+- LED Emergency Lights
+- Rechargeable Batteries
